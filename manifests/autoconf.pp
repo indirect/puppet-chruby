@@ -1,3 +1,0 @@
-class autoconf {
-  package { 'autoconf': }
-}
