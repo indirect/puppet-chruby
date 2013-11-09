@@ -9,7 +9,7 @@ Puppet::Type.type(:chruby_gem).provide(:rubygems) do
       "#{@resource[:chruby_root]}/bin",
       "#{@resource[:chruby_root]}/versions/#{@resource[:ruby_version]}/bin",
       "#{Facter[:boxen_home].value}/homebrew/bin",
-      "$PATH"
+      ENV['PATH']
     ].join(':')
   end
 
