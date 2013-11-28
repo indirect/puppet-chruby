@@ -1,4 +1,4 @@
-# Installs ruby 1.9.3-p392 via ruby-build and symlinks it as 1.9.3.
+# Installs ruby 1.9.3-p484 via ruby-build and symlinks it as 1.9.3.
 #
 # Usage:
 #
@@ -10,6 +10,6 @@ class ruby::1_9_3 {
   file { "${ruby::chruby_root}/versions/1.9.3":
     ensure  => symlink,
     force   => true,
-    target  => "${ruby::chruby_root}/versions/1.9.3-p448"
+    target  => "${ruby::chruby_root}/versions/1.9.3-p484"
   }
 }
