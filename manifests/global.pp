@@ -4,7 +4,7 @@
 #
 #   class { 'ruby::global': version => '1.9.3' }
 
-class ruby::global($version = '1.9.3') {
+class ruby::global($version = '2.1.1') {
   require ruby
 
   if $version != 'system' {
